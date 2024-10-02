@@ -1,4 +1,4 @@
-# Input & Output
+# 1. Input & Output
 The communication between an information processing system, such as a computer, and the outside world, possibly a human or another information processing system.
 
 * Python 
@@ -38,7 +38,7 @@ int main() {
 Output: Hello World!
 ```
 ****************************************************************
-# Variables
+# 2. Variables
 A variable is any characteristic, number, or quantity that can be measured or counted. A variable may also be called a data item.
 
 * Python 
@@ -59,3 +59,230 @@ print(y)  //print the value which is store in variable y
 Output: 50
         Ruhi
 ```
+## JavaScript
+JavaScript Variables can be declared in 4 ways:
+
+* Automatically
+* Using 'var'
+* Using 'let'
+* Using 'const'
+
+1. Always declare variables
+
+2. Always use const if the value should not be changed
+
+3. Always use const if the type should not be changed (Arrays and Objects)
+
+4. Only use let if you can't use const
+
+5. Only use var if you MUST support old browsers.
+****************************************************************
+
+* Automatically 
+```javascript variable automatically
+x = 5;
+y = 6;
+z = x + y; 
+```
+
+
+* Using 'var'
+```javascript variable using var 
+var x = 5;
+var y = 6;
+var z = x + y;
+```
+
+* Using 'let'
+```javascript variable using let
+let x = 5;
+let y = 6;
+let z = x + y;
+```
+* Using 'const'
+```javascript variable using const
+const x = 5;
+const y = 6;
+const z = x+y;
+```
+## C++
+Variables are containers for storing data values.
+
+In C++, there are different types of variables (defined with different keywords), for example:
+
+* int - stores integers (whole numbers), without decimals, such as 123 or -123
+* double - stores floating point numbers, with decimals, such as 19.99 or -19.99
+* char - stores single characters, such as 'a' or 'B'. Char values are surrounded by *  single quotes
+* string - stores text, such as "Hello World". String values are surrounded by double quotes
+* bool - stores values with two states: true or false
+
+```C++ variables
+int myNum = 5;               // Integer 
+double myFloatNum = 5.99;    // Floating point number 
+char myLetter = 'D';         // Character
+string myText = "Hello";     // String (text)
+bool myBoolean = true;       // Boolean (true or false)
+```
+
+****************************************************************
+# 3. Conditions
+Conditional statements in programming are used to control the flow of a program based on certain conditions. These statements allow the execution of different code blocks depending on whether a specified condition evaluates to true or false, providing a fundamental mechanism for decision-making in algorithms. In this article, we will learn about the basics of Conditional Statements along with their different types.
+
+### 5 Types of Conditional Statements in Programming
+* If Conditional Statement
+* If-Else Conditional Statement
+* if-Else if Conditional Statement
+* Switch Conditional Statement
+* Ternary Expression Conditional Statement
+
+*******************************************************************
+* If Conditional Statement :\
+The if statement is the most basic form of conditional statement. It checks if a condition is true. If it is, the program executes a block of code.
+
+### Python
+
+```Python if statement
+a = 33
+b = 200
+if b > a:
+  print("b is greater than a") 
+```
+### JavaScript
+
+```javascript if statement
+if (hour < 18) {
+  greeting = "Good day";
+} 
+```
+### C++
+
+```c++ if statement
+#include <iostream>
+using namespace std;
+
+int main() {
+  if (20 > 18) {
+    cout << "20 is greater than 18";
+  }  
+  return 0;
+}
+```
+****************************************************************
+* If-Else Conditional Statement :\
+The if-else statement extends the if statement by adding an else clause. If the condition is false, the program executes the code in the else block.
+
+### Python
+
+```python if-else statement 
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+```
+### JavaScript 
+
+```javascript if-else statement 
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+```
+### C++
+
+```c++ if-else statement 
+#include <iostream>
+using namespace std;
+
+int main() {
+  int time = 20;
+  if (time < 18) {
+    cout << "Good day.";
+  } else {
+    cout << "Good evening.";
+  }
+  return 0;
+}
+```
+********************************
+* if-Else if Conditional Statement :\
+The if-else if statement allows for multiple conditions to be checked in sequence. If the if condition is false, the program checks the next else if condition, and so on.
+
+### Python 
+
+```python if-elif statement 
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
+```
+
+### JavaScript
+
+```javascript if-elseif statement
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+```
+
+### C++
+
+```c++ if-elseif statement 
+#include <iostream>
+using namespace std;
+
+int main() {
+  int time = 22;
+  if (time < 10) {
+    cout << "Good morning.";
+  } else if (time < 20) {
+    cout << "Good day.";
+  } else {
+    cout << "Good evening.";
+  }
+  return 0;
+}
+```
+****************************************************************
+* Switch Conditional Statement :\
+The switch statement is used when you need to check a variable against a series of values. It’s often used as a more readable alternative to a long if-else if chain.\
+In switch expressions, each block is terminated by a break keyword. The statements in switch are expressed with cases.
+
+### Syntax 
+
+```syntax of switch statement
+switch (variable) {
+    case value1:
+        // code to execute if variable equals value1
+        break;
+    case value2:
+        // code to execute if variable equals value2
+        break;
+    default:
+        // code to execute if variable doesn't match any value
+}
+```
+*****************************************************************
+
+* Ternary Expression Conditional Statement :\
+The ternary operator is a shorthand way of writing an if-else statement. It takes three operands: a condition, a result for when the condition is true, and a result for when the condition is false.
+
+### Syntax 
+```syntax of ternary expression statement 
+condition ? result_if_true : result_if_false
+```
+****************************************************************
+
+# 4. Loop Expression
+In computer programming, a loop is a sequence of instruction s that is continually repeated until a certain condition is reached. Typically, a certain process is done, such as getting an item of data and changing it, and then some condition is checked such as whether a counter has reached a prescribed number. If it hasn't, the next instruction in the sequence is an instruction to return to the first instruction in the sequence and repeat the sequence. If the condition has been reached, the next instruction "falls through" to the next sequential instruction or branches outside the loop. A loop is a fundamental programming idea that is commonly used in writing programs.
+
