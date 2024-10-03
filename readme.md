@@ -286,3 +286,131 @@ condition ? result_if_true : result_if_false
 # 4. Loop Expression
 In computer programming, a loop is a sequence of instruction s that is continually repeated until a certain condition is reached. Typically, a certain process is done, such as getting an item of data and changing it, and then some condition is checked such as whether a counter has reached a prescribed number. If it hasn't, the next instruction in the sequence is an instruction to return to the first instruction in the sequence and repeat the sequence. If the condition has been reached, the next instruction "falls through" to the next sequential instruction or branches outside the loop. A loop is a fundamental programming idea that is commonly used in writing programs.
 
+## For loop expression
+For loop in programming is a control flow structure that iterates over a sequence of elements, such as a range of numbers, items in a list, or characters in a string. The loop is entry-controlled because it determines the number of iterations before entering the loop.
+
+### Python 
+```python for loop
+sum = 0
+for x in [1,2,3,4,5]:
+      sum = sum + x
+
+print(sum)
+```
+
+### JavaScript 
+```javascript for loop
+var nums = ['100','300','400','60','40'];
+var sum = 0;
+
+for(var i=0; i < nums.length; i++){
+
+    sum += parseInt(nums[i]);
+
+}
+
+console.log(sum);
+```
+
+### C++
+```c++ for loop
+#include<iostream> 
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter a number : "; 
+    cin >> n;
+    
+    int sum=0;
+    
+    for(int i=1;i<=n;i++) 
+        sum+=i;
+
+    cout << sum;
+
+    return 0;
+}
+```
+
+## Whie loop expression
+A while loop in programming is an entry-controlled control flow structure that repeatedly executes a block of code as long as a specified condition is true. The loop continues to iterate while the condition remains true, and it terminates once the condition evaluates to false.
+
+### Python
+```python while loop
+i = 0
+while i < 5:
+    print(i, end=" ")
+    i += 1
+```
+
+### JavaScript
+```javascript while loop
+let i,  sum = 0
+i = 1
+while (i<=10){
+  
+  if(i%2==0){
+    sum= sum + i
+  }
+
+  i++
+}
+console.log(sum)
+```
+
+### C++
+```c++ while loop
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    int i = 0;
+    while (i < 5) {
+        cout << i << " ";
+        i++;
+    }
+    return 0;
+}
+```
+****************************************************************
+# Functions 
+Functions in Programming is a block of code that encapsulates a specific task or related group of tasks. Functions are defined by a name, may have parameters and may return a value. The main idea behind functions is to take a large program, break it into smaller, more manageable pieces (or functions), each of which accomplishes a specific task.
+
+### Python 
+```python function 
+def my_function():
+  print("Hello from a function")
+
+my_function()
+```
+
+### JavaScript
+```javascript function
+function greet() {
+    console.log("Hello World!");
+}
+
+greet();
+
+console.log("Outside function");
+```
+
+### C++ 
+```c++ function
+#include <iostream>
+using namespace std;
+
+void myFunction() {
+  cout << "I just got executed!";
+}
+
+int main() {
+  myFunction();
+  return 0;
+}
+
+```
